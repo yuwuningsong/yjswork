@@ -1,3 +1,45 @@
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : yjs
+ Source Server Type    : MySQL
+ Source Server Version : 80024
+ Source Host           : localhost:3306
+ Source Schema         : yun
+
+ Target Server Type    : MySQL
+ Target Server Version : 80024
+ File Encoding         : 65001
+
+ Date: 26/05/2022 17:36:52
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for sys_user
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_user`;
+CREATE TABLE `sys_user` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `password` varchar(50) DEFAULT NULL,
+  `nickname` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `sex` varchar(20) DEFAULT NULL,
+  `hobby` varchar(255) DEFAULT NULL,
+  `indro` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- ----------------------------
+-- Records of sys_user
+-- ----------------------------
+BEGIN;
 INSERT INTO `sys_user` (`id`, `username`, `password`, `nickname`, `email`, `phone`, `address`, `create_time`, `sex`, `hobby`, `indro`) VALUES (1, 'shl', '123', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `sys_user` (`id`, `username`, `password`, `nickname`, `email`, `phone`, `address`, `create_time`, `sex`, `hobby`, `indro`) VALUES (6, 'hdhsdk', NULL, '函调', '收拾收', 'ssss', 'ssss', '2022-05-25 23:43:49', '男', NULL, NULL);
 INSERT INTO `sys_user` (`id`, `username`, `password`, `nickname`, `email`, `phone`, `address`, `create_time`, `sex`, `hobby`, `indro`) VALUES (7, 'zhu', '123', '猪八戒', '1111@qq.com', '11112221', 'gaolaozhuang', NULL, NULL, NULL, NULL);
@@ -14,3 +56,6 @@ INSERT INTO `sys_user` (`id`, `username`, `password`, `nickname`, `email`, `phon
 INSERT INTO `sys_user` (`id`, `username`, `password`, `nickname`, `email`, `phone`, `address`, `create_time`, `sex`, `hobby`, `indro`) VALUES (27, 'hhh', 'q', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `sys_user` (`id`, `username`, `password`, `nickname`, `email`, `phone`, `address`, `create_time`, `sex`, `hobby`, `indro`) VALUES (28, 'adc', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `sys_user` (`id`, `username`, `password`, `nickname`, `email`, `phone`, `address`, `create_time`, `sex`, `hobby`, `indro`) VALUES (29, '11', '1111', '你说你', NULL, NULL, NULL, '2022-05-26 00:35:53', NULL, NULL, NULL);
+COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1;
