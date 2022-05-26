@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>catalogName</key>
+	<string></string>
+	<key>connTypeString</key>
+	<string>MySQL</string>
+	<key>objectName</key>
+	<string>sys_user</string>
+	<key>projectUUID</key>
+	<string></string>
+	<key>schemaName</key>
+	<string>yun</string>
+	<key>serverName</key>
+	<string>yjs</string>
+	<key>typeString</key>
+	<string>Table</string>
+</dict>
+</plist>
